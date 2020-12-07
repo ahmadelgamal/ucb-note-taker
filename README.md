@@ -21,7 +21,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
-**Note Taker** is a web application for users to add, delete and retrieve notes. It uses express.js for routing and JSON format for data storage.
+**Note Taker** is a web application for users to add, delete and retrieve notes. Your data will be saved to the cloud and you can access it from any browser with internet access. 
 
 This app is the week 11 challenge at UCB extension online full-stack coding bootcamp.
 
@@ -61,10 +61,10 @@ This is a web application that requires no installation.
    1. Click on the _save_ icon.
 1. To go back to the landing page, click on "**Note Taker**" in the navigation at the top left of the page.
 
+Please note that the current version is made for one user only (the small business owner mentioned in the Features section).
+
 ### Screenshot / Gif Animation
-![Screenshot / Gif Animation](./assets/...)
-### Video
-[Video Demo](https://youtu.be/...)
+![Screenshot / Gif Animation](./public/assets/images/demo.gif)
 
 ## Technologies Used
 1. HTML5
