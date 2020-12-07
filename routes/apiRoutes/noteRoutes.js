@@ -11,7 +11,7 @@ router.get('/', (req, res) => {
 // Post /api/notes/ should receive a new note to save on the request body,
 // add it to the db.json file, then return the new note to the client
 router.post('/', (req, res) => {
-  // set id based on what the next index of the array will be
+  // set random unique id using uniqid module
   req.body.id = uniqid();
   const note = addNote(req.body);
   res.json(note);
@@ -21,8 +21,8 @@ router.post('/', (req, res) => {
 // It should read all notes from the db.json file, remove the note with the given id property, 
 // and then rewrite the notes to the db.json file
 router.delete('/:id', (req, res) => {
-  const deletedNote = deleteNote(req.params.id);
-  res.json(deletedNote);
+  deleteNote(req.params.id);
+  res.sendStatus(200);
 });
 
 module.exports = router;

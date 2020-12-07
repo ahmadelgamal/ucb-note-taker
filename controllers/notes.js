@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const notes = require('../db/db.json');
+let notes = require('../db/db.json');
 
 function addNote(note) {
   notes.push(note);
@@ -17,17 +17,18 @@ function deleteNote(noteId) {
   // creates new array to hold new array after deleted note
   let updatedNotes = [];
   for (let i = 0; i < notes.length; i++) {
-    if (notes[i] !== note) {
+    if (note !== notes[i]) {
       updatedNotes.push(notes[i]);
     }
   }
 
-  // rewrites notes array after deleting note
+  // rewrites db.json using updatedNotes array
   fs.writeFileSync(
     path.join(__dirname, '../db/db.json'),
     JSON.stringify(updatedNotes)
   );
-  return note;
+
+  return;
 }
 
 module.exports = {addNote, deleteNote};
