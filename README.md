@@ -52,7 +52,7 @@ This is a web application that requires no installation.
 ## Usage
 1. Visit the website [Deployment URL](https://ucb-note-taker.herokuapp.com/).
 1. To retreive saved notes, click on "**Get Started**". Note titles of saved notes will be displayed in the left column.
-1. To display the _note-text_ of a note, click on the _note-title_, of the corresponding note, in the left column.
+1. To display the _note-text_ of a note, click on the _note-title_, of the corresponding note, in the left column. The entire note will appear in the right column.
 1. To delete a note, click on the _trash-can_ icon to the right of the note in the left column.
 1. To add a note:
    1. Click on the _write_ icon in the navigation at the top right of the page .
@@ -70,9 +70,10 @@ This is a web application that requires no installation.
 1. HTML5
 1. CSS3
 1. JavaScript
+1. JSON
 1. Node.js
 1. Express.js
-1. JSON
+1. Uniqid
 
 Please note that the frontend code was provided by UCB Extension.
 

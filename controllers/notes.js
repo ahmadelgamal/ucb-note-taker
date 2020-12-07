@@ -27,7 +27,7 @@ function deleteNote(noteId) {
     path.join(__dirname, '../db/db.json'),
     JSON.stringify(updatedNotes)
   );
-  return;
+  return note;
 }
 
 module.exports = {addNote, deleteNote};
