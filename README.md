@@ -21,7 +21,9 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
-README Gen Pro is a command-line application that dynamically generates a professional `README.md` file from a user's input using the `inquirer.js` package.
+**Note Taker** is a simple application for users to add, delete and retreive notes. It uses express.js for routing and JSON format for data storage.
+
+This app is the week 11 challenge at UCB extension online full stack coding bootcamp.
 
 ## Table of Contents
 - [Deployment URL](#Deployment-URL)
@@ -30,62 +32,49 @@ README Gen Pro is a command-line application that dynamically generates a profes
 - [Installation](#Installation)
 - [Usage](#Usage)
 - [Technologies Used](#Technologies-Used)
-- [Tests](#Tests)
-- [Roadmap](#Roadmap)
 - [Questions](#Questions)
 - [License](#License)
 
 ### Deployment URL
-This is a command-line application. It is not deployed online.
+https://ucb-note-taker.herokuapp.com/
 
 ### Repo URL
-https://github.com/ahmadelgamal/README-Gen-Pro
+https://github.com/ahmadelgamal/ucb-note-taker
 
 ## Features
-1. This is an easy to use Command-Line application.
-1. It uses the `inquirer` module to ask the user a series of questions.
-1. The answers are used to automatically generate a `README.md` file in an `output` directory/folder.
-
+- AS A small business owner
+- I WANT to be able to write and save notes
+- SO THAT I can organize my thoughts and keep track of tasks I need to complete
 
 ## Installation
-1. Download or Clone this repository.
-1. If you downloaded the zipped version of this repo, then unzip it in the desired directory.
-1. Go to the command line (if you're not there already).
-1. Change the directory to `README-Gen-Pro`.
-1. Run: `npm install` to install the `inquirer` module.
-
+This is a web application that requires no installation.
 
 ## Usage
-1. Go to the command line.
-1. Run `node index.js` (or `npm start`).
-1. Answer the question prompts.
-1. Once completed, check the `output` folder for the `README.md` file.
-1. If you chose to add a gif animation/screenshot file, then either add it to a `./assets/images` folder in your app, or change the relative path in the `README.md` file.
+1. Visit the website (deployment URL).
+1. To retreive saved notes, click on "**Get Started**". Note titles of saved notes will be displayed in the left column.
+1. To display the note text of a note, click on the note title, of the corresponding note, in the left column.
+1. To delete a note, click on the _trash-can_ icon to the right of the note in the left column.
+1. To add a note:
+   1. Click on the _write_ icon in the navigation at the top right of the page .
+   1. Add the _note title_ in the "**Note Title**" field.
+   1. Add the _note text_ in the "**Note Text**" field.
+   1. Click on the _save_ icon.
+1. To go back to the landing page, click on "**Note Taker**" in the navigation at the top left of the page.
 
 ### Screenshot / Gif Animation
-![Screenshot / Gif Animation](./assets/images/output.gif)
+![Screenshot / Gif Animation](./assets/...)
 ### Video
-[Video Demo](https://youtu.be/rEZoblXSlMg)
+[Video Demo](https://youtu.be/...)
 
 ## Technologies Used
+1. HTML5
+1. CSS3
 1. JavaScript
 1. Node.js
-1. Inquirer.js
-1. Markdown
+1. Express.js
+1. JSON
 
-
-
-
-
-## Tests
-1. Run the command `npm test` to generate a sample `README.md`.
-1. You can change the test values by changing the values of the object in the `sample-answers.js` file, located in the `__test` folder.
-
-## Roadmap
-1. Add more license options.
-1. Add autocomplete.
-1. Add trim() to user input.
-
+Please note that the frontend code was provided by UCB Extension.
 
 ## Questions
 Please send your questions and / or comments to **Ahmad El Gamal** at ahmadelgamal@gmail.com, or contact me on [GitHub](https://github.com/ahmadelgamal).
