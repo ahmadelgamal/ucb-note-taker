@@ -12,7 +12,7 @@ function addNote(note) {
 }
 
 function deleteNote(noteId) {
-  const note = notes.find(note => note.id === noteId);
+  const note = notes.find(note => note.id == noteId);
   
   // creates new array to hold new array after deleted note
   let updatedNotes = [];
