@@ -21,9 +21,9 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
-**Note Taker** is a simple application for users to add, delete and retreive notes. It uses express.js for routing and JSON format for data storage.
+**Note Taker** is a web application for users to add, delete and retrieve notes. It uses express.js for routing and JSON format for data storage.
 
-This app is the week 11 challenge at UCB extension online full stack coding bootcamp.
+This app is the week 11 challenge at UCB extension online full-stack coding bootcamp.
 
 ## Table of Contents
 - [Deployment URL](#Deployment-URL)
@@ -50,14 +50,14 @@ https://github.com/ahmadelgamal/ucb-note-taker
 This is a web application that requires no installation.
 
 ## Usage
-1. Visit the website (deployment URL).
+1. Visit the website [Deployment URL](https://ucb-note-taker.herokuapp.com/).
 1. To retreive saved notes, click on "**Get Started**". Note titles of saved notes will be displayed in the left column.
-1. To display the note text of a note, click on the note title, of the corresponding note, in the left column.
+1. To display the _note-text_ of a note, click on the _note-title_, of the corresponding note, in the left column.
 1. To delete a note, click on the _trash-can_ icon to the right of the note in the left column.
 1. To add a note:
    1. Click on the _write_ icon in the navigation at the top right of the page .
-   1. Add the _note title_ in the "**Note Title**" field.
-   1. Add the _note text_ in the "**Note Text**" field.
+   1. Add the _note-title_ in the "**Note Title**" field.
+   1. Add the _note-text_ in the "**Note Text**" field.
    1. Click on the _save_ icon.
 1. To go back to the landing page, click on "**Note Taker**" in the navigation at the top left of the page.
 
