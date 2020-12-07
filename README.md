@@ -23,8 +23,6 @@
 ## Description
 **Note Taker** is a web application for users to add, delete and retrieve notes. Your data will be saved to the cloud and you can access it from any browser with internet access. 
 
-This app is the week 11 challenge at UCB extension online full-stack coding bootcamp.
-
 ## Table of Contents
 - [Deployment URL](#Deployment-URL)
 - [Repo URL](#Repo-URL)
@@ -50,7 +48,7 @@ https://github.com/ahmadelgamal/ucb-note-taker
 This is a web application that requires no installation.
 
 ## Usage
-1. Visit the website [Deployment URL](https://ucb-note-taker.herokuapp.com/).
+1. Visit the [website](https://ucb-note-taker.herokuapp.com/).
 1. To retreive saved notes, click on "**Get Started**". Note titles of saved notes will be displayed in the left column.
 1. To display the _note-text_ of a note, click on the _note-title_, of the corresponding note, in the left column. The entire note will appear in the right column.
 1. To delete a note, click on the _trash-can_ icon to the right of the note in the left column.
@@ -73,9 +71,9 @@ Please note that the current version is made for one user only (the small busine
 1. JSON
 1. Node.js
 1. Express.js
-1. Uniqid
+1. Uniqid.js
 
-Please note that the frontend code was provided by UCB Extension.
+Please note that this app is the week 11 challenge at UCB extension online full-stack coding bootcamp. The frontend code was provided by UCB Extension.
 
 ## Questions
 Please send your questions and / or comments to **Ahmad El Gamal** at ahmadelgamal@gmail.com, or contact me on [GitHub](https://github.com/ahmadelgamal).
