@@ -14,25 +14,15 @@ function addNote(note) {
 function deleteNote(noteId) {
   const note = notes.find(note => note.id === noteId);
 
-  // creates new array to hold new array after deleted note
-  let updatedNotes = [];
-  
-  console.log('Before' + notes);
   for (let i = 0; i < notes.length; i++) {
     if (note === notes[i]) {
       notes.splice(i, 1);
     }
-    // if (note !== notes[i]) {
-    //   updatedNotes.push(notes[i]);
-    // }
   }
-
-  console.log('After' + notes);
 
   // rewrites db.json using updatedNotes array
   fs.writeFileSync(
     path.join(__dirname, '../db/db.json'),
-    // JSON.stringify(updatedNotes)
     JSON.stringify(notes)
   );
 
