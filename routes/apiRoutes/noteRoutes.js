@@ -21,8 +21,9 @@ router.post('/', (req, res) => {
 // It should read all notes from the db.json file, remove the note with the given id property, 
 // and then rewrite the notes to the db.json file
 router.delete('/:id', (req, res) => {
-  deleteNote(req.params.id);
-  res.sendStatus(200);
+  const deleteReturn = deleteNote(req.params.id);
+  if (deleteReturn === 'Successful') res.sendStatus(200);
+  else res.send('Error deleting note!');
 });
 
 module.exports = router;

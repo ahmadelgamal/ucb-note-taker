@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-let notes = require('../db/db.json');
+const notes = require('../db/db.json');
 
 function addNote(note) {
   notes.push(note);
@@ -28,7 +28,7 @@ function deleteNote(noteId) {
     JSON.stringify(updatedNotes)
   );
 
-  return;
+  return 'Successful';
 }
 
 module.exports = {addNote, deleteNote};
