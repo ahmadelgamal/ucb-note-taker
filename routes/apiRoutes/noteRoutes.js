@@ -1,4 +1,5 @@
 const router = require('express').Router();
+const uniqid = require('uniqid');
 const notes = require('../../db/db.json');
 const { addNote, deleteNote } = require('../../controllers/notes');
 
@@ -11,7 +12,7 @@ router.get('/', (req, res) => {
 // then return the new note to the client
 router.post('/', (req, res) => {
   // set id based on what the next index of the array will be
-  req.body.id = notes.length.toString();
+  req.body.id = uniqid();
   const note = addNote(req.body);
   res.json(note);
 });
