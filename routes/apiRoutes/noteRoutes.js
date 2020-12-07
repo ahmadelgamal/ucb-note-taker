@@ -22,7 +22,7 @@ router.post('/', (req, res) => {
 // and then rewrite the notes to the db.json file
 router.delete('/:id', (req, res) => {
   const deleteReturn = deleteNote(req.params.id);
-  if (deleteReturn === 'Successful') res.sendStatus(200);
+  if (deleteReturn === 'Ok') res.sendStatus(200);
   else res.send('Error deleting note!');
 });
 
