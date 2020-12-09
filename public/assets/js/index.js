@@ -128,11 +128,7 @@ const renderNoteList = async (notes) => {
     const liEl = document.createElement('li');
     liEl.classList.add('list-group-item');
     liEl.addEventListener('click', handleNoteView);
-
-    const spanEl = document.createElement('span');
-    spanEl.innerText = text;
-
-    liEl.append(spanEl);
+    liEl.innerText = text;
 
     if (delBtn) {
       const delBtnEl = document.createElement('i');
