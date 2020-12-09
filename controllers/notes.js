@@ -25,7 +25,6 @@ function deleteNote(noteId) {
     path.join(__dirname, '../db/db.json'),
     JSON.stringify(notes)
   );
-
   return 'Ok';
 }
 
